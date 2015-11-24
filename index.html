@@ -20,12 +20,13 @@
 		<div id="content">
 			<div id="code">
 				<span class="comments">/**</span><br />
-				<span class="space"/><span class="comments">* We are both Fudan SSers and programmers,</span><br />
-				<span class="space"/><span class="comments">* so I write some code to celebrate our 1st anniversary.</span><br />
+				<span class="space"/><span class="comments">* We met at BUPT and fall in love with each other,</span><br />
+				<span class="space"/><span class="comments">* my honey's birthday is at Nov 15,</span><br />
+				<span class="space"/><span class="comments">* so I write code for her to celebrate.</span><br />
 				<span class="space"/><span class="comments">*/</span><br />
-				Boy i = <span class="keyword">new</span> Boy(<span class="string">"hackerzhou"</span>);<br />
-				Girl u = <span class="keyword">new</span> Girl(<span class="string">"MaryNee"</span>);<br />
-				<span class="comments">// Nov 2, 2010, I told you I love you. </span><br />
+				Boy i = <span class="keyword">new</span> Boy(<span class="string">"He Yahao"</span>);<br />
+				Girl u = <span class="keyword">new</span> Girl(<span class="string">"Gao Jin"</span>);<br />
+				<span class="comments">// May 30, 2015, I told you I love you. </span><br />
 				i.love(u);<br />
 				<span class="comments">// Luckily, you accepted and became my girlfriend eversince.</span><br />
 				u.accepted();<br />
@@ -33,44 +34,45 @@
 				i.miss(u);<br />
 				<span class="comments">// And take care of u and our love.</span><br />
 				i.takeCareOf(u);<br />
-				<span class="comments">// You say that you won't be so easy to marry me.</span><br />
-				<span class="comments">// So I keep waiting and I have confidence that you will.</span><br />
-				<span class="keyword">boolean</span> isHesitate = <span class="keyword">true</span>;<br />
-				<span class="keyword">while</span> (isHesitate) {<br />
-				<span class="placeholder"/>i.waitFor(u);<br />
-				<span class="placeholder"/><span class="comments">// I think it is an important decision</span><br />
-				<span class="placeholder"/><span class="comments">// and you should think it over.</span><br />
-				<span class="placeholder"/>isHesitate = u.thinkOver();<br />
+				<span class="comments">// You say that I am sometimes stubborn,</span><br />
+				<span class="comments">// So I try best to become better.</span><br />
+				<span class="keyword">boolean</span> hasDisagreement = <span class="keyword">true</span>;<br />
+				<span class="keyword">while</span> (hasDisagreement) {<br />
+				<span class="placeholder"/>mutualUnderstanding(i, u);<br />
+				<span class="placeholder"/><span class="comments">//We understand with each other and find</span><br />
+				<span class="placeholder"/><span class="comments">// solution to work out.</span><br />
+				<span class="placeholder"/>hasDisagreement = i.thinkOver() &amp;&amp; u.thinkOver();<br />
 				}<br />
-				<span class="comments">// After a romantic wedding, we will live happily ever after.</span><br />
+				<span class="comments">// After graduate from school and walk into job market,</span><br />
+				<span class="comments">// I will propose to you.</span><br />
+				i.propose(u);<br />
 				i.marry(u);<br />
-				i.liveHappilyWith(u);<br />
+				(i, u).liveHappily;<br />
 			</div>
 			<div id="loveHeart">
 				<canvas id="garden"></canvas>
 				<div id="words">
 					<div id="messages">
-						Minyue, I have fallen in love with you for
+						Gao Jin, we have been together for
 						<div id="elapseClock"></div>
 					</div>
 					<div id="loveu">
-						Love u forever and ever.<br/>
-						<div class="signature">- hackerzhou</div>
+						You are the apple of my eye.<br/>
+						<div class="signature">- He Yahao</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div id="copyright">
-			Inspired by <a href="http://www.openrise.com/lab/FlowerPower/">FlowerPower</a> project.<br />
-			Copyright © 2011 <a href='http://hackerzhou.me'>hackerzhou.me</a> 2009-2011
+			Copyright 2015 <a href='http://mirrorman.xyz'>mirrorman.xyz</a> 2015
 		</div>
 	</div>
 	<script type="text/javascript">
 		var offsetX = $("#loveHeart").width() / 2;
 		var offsetY = $("#loveHeart").height() / 2 - 55;
 		var together = new Date();
-		together.setFullYear(2010, 10, 2);
-		together.setHours(20);
+		together.setFullYear(2015, 7, 30);
+		together.setHours(12);
 		together.setMinutes(0);
 		together.setSeconds(0);
 		together.setMilliseconds(0);
@@ -87,7 +89,7 @@
 		} else {
 			setTimeout(function () {
 				startHeartAnimation();
-			}, 5000);
+			}, 12000);
 
 			timeElapse(together);
 			setInterval(function () {
